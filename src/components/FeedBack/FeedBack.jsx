@@ -14,18 +14,23 @@ class FeedBack extends Component {
     // this.setState({ good: 5 });
   };
 
-  countTotalFeedback = () => {
+  totalFeedback = () => {
     const { good, neutral, bad } = this.state;
     return good + neutral + bad;
   };
 
-  countPositiveFeedbackPercentage = () => {};
+  positiveFeedbackPercentage = () => {
+    const { good } = this.state;
+
+    const totalFeedback = this.totalFeedback();
+    return totalFeedback > 0 ? (good * 100) / totalFeedback : 0;
+  };
 
   render() {
     const { good, neutral, bad } = this.state;
 
-    const totalFeedback = this.countTotalFeedback();
-    const percentPositiveFeedback = this.countPositiveFeedbackPercentage();
+    const totalFeedback = this.totalFeedback();
+    const percentPositiveFeedback = this.positiveFeedbackPercentage();
 
     return (
       <div>
