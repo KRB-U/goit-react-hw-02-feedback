@@ -2,6 +2,7 @@ import { DivButtonContainer } from './FeedbackOptions.styled';
 
 const FeedbackOptions = ({ onLeaveFeedback }) => {
   return (
+    // вса
     <DivButtonContainer>
       <button onClick={() => onLeaveFeedback('good')}>Good</button>
       <button onClick={() => onLeaveFeedback('neutral')}>Neutral</button>
