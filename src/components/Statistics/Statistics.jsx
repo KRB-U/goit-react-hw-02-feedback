@@ -1,6 +1,6 @@
 import React from 'react';
-import { divContainerStatistic, PStatisticsDetail } from './Statistics.styled';
-
+import { PStatisticsDetail } from './Statistics.styled';
+// divContainerStatistic
 const Statistics = ({
   good,
   neutral,
