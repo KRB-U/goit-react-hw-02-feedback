@@ -1,5 +1,5 @@
 import React from 'react';
-import { divContainerStatistic } from './Statistics.styled';
+import { divContainerStatistic, PStatisticsDetail } from './Statistics.styled';
 
 const Statistics = ({
   good,
@@ -10,11 +10,13 @@ const Statistics = ({
 }) => {
   return (
     <div>
-      <p>Good: {good}</p>
-      <p>Neutral: {neutral}</p>
-      <p>Bad: {bad}</p>
-      <p>Total: {totalFeedback}</p>
-      <p>Positive feedback: {percentPositiveFeedback}</p>
+      <PStatisticsDetail>Good: {good}</PStatisticsDetail>
+      <PStatisticsDetail>Neutral: {neutral}</PStatisticsDetail>
+      <PStatisticsDetail>Bad: {bad}</PStatisticsDetail>
+      <PStatisticsDetail>Total: {totalFeedback}</PStatisticsDetail>
+      <PStatisticsDetail>
+        Positive feedback: {percentPositiveFeedback}
+      </PStatisticsDetail>
     </div>
   );
 };

@@ -1,5 +1,7 @@
+import { PMessageError } from './Notification.styled';
+
 const Notification = ({ message }) => {
-  return <p>{message}</p>;
+  return <PMessageError>{message}</PMessageError>;
 };
 
 export { Notification };
