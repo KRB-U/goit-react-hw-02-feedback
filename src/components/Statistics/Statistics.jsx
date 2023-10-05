@@ -1,4 +1,5 @@
 import React from 'react';
+import { divContainerStatistic } from './Statistics.styled';
 
 const Statistics = ({
   good,

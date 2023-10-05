@@ -38,7 +38,13 @@ class App extends Component {
     const percentPositiveFeedback = this.positiveFeedbackPercentage();
 
     return (
-      <div>
+      <div
+      // style={{
+      //   display: 'flex',
+      //   flexDirection: 'column',
+      //   alignItems: 'center',
+      // }}
+      >
         <Section title="Please leave feedback">
           <FeedbackOptions
             onLeaveFeedback={this.handleFeedback}

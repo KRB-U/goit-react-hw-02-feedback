@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
-const DivButtonContainer = styled.button`
+const DivButtonContainer = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: left;
   gap: 10px;
 
-  /* button {
-    padding: 10px 20px;
+  button {
+    padding: 5px 15px;
     background-color: #e0e0e0;
     border: none;
     border-radius: 4px;
@@ -17,7 +17,7 @@ const DivButtonContainer = styled.button`
   button:focus {
     background-color: #a0a0a0;
     color: white;
-  } */
+  }
 `;
 
 export { DivButtonContainer };
