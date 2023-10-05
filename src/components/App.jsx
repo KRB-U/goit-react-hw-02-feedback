@@ -1,4 +1,4 @@
-import { FeedBack } from './FeedBack/FeedBack';
+import { FeedBack } from 'components/FeedBack/FeedBack';
 
 export const App = () => {
   return (
