@@ -15,7 +15,7 @@ const Statistics = ({
       <PStatisticsDetail>Bad: {bad}</PStatisticsDetail>
       <PStatisticsDetail>Total: {totalFeedback}</PStatisticsDetail>
       <PStatisticsDetail>
-        Positive feedback: {percentPositiveFeedback}
+        Positive feedback: {percentPositiveFeedback}%
       </PStatisticsDetail>
     </div>
   );

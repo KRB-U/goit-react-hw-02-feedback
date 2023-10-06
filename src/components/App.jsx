@@ -26,9 +26,7 @@ class App extends Component {
     const { good } = this.state;
 
     const totalFeedback = this.totalFeedback();
-    return `${
-      totalFeedback > 0 ? Math.round((good * 100) / totalFeedback) : 0
-    }%`;
+    return totalFeedback > 0 ? Math.round((good * 100) / totalFeedback) : 0;
   };
 
   render() {
