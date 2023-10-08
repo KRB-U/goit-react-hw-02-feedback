@@ -1,7 +1,6 @@
 import { DivButtonContainer } from './FeedbackOptions.styled';
 
 const FeedbackOptions = ({ onLeaveFeedback, options }) => {
-  console.log(options);
   return (
     <DivButtonContainer>
       {options.map(option => (
