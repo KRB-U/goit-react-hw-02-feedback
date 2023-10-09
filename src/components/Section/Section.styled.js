@@ -1,9 +1,7 @@
 import styled from 'styled-components';
 
 const DivSectionTitle = styled.div`
-  /* display: flex;
-  align-items: center; */
-  margin-bottom: 20px;
+  margin: 10px;
 `;
 
 const HTitle = styled.h2`

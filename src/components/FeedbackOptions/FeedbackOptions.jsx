@@ -1,10 +1,10 @@
-import { DivButtonContainer } from './FeedbackOptions.styled';
+import { DivButtonContainer, Button } from './FeedbackOptions.styled';
 
 const FeedbackOptions = ({ onLeaveFeedback, options }) => {
   return (
     <DivButtonContainer>
       {options.map(option => (
-        <button
+        <Button
           key={option}
           type="button"
           name={option}
@@ -13,7 +13,7 @@ const FeedbackOptions = ({ onLeaveFeedback, options }) => {
           }}
         >
           {option.charAt(0).toUpperCase() + option.slice(1)}
-        </button>
+        </Button>
       ))}
 
       {/* {[key]: option[key]} */}
